@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎉 Happy Birthday</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<canvas class="confetti" id="confettiCanvas"></canvas>
+
+<div class="container">
+  <h1>🎉 Enter Your Name</h1>
+  <input type="text" id="nameInput" placeholder="Your name..."><br/>
+  <input type="file" id="photoInput" accept="image/*"><br/>
+  <button onclick="showWish()">🎁 Reveal Surprise</button>
+
+  <div id="wishMessage">🎂 Happy Birthday!</div>
+  <img id="uploadedPhoto" />
+  <div class="cake">
+    <img src="https://i.imgur.com/uC1F0Qt.png" alt="Birthday Cake">
+  </div>
+</div>
+
+<audio id="music" preload="auto">
+  <source src="https://cdn.pixabay.com/audio/2021/10/06/audio_5c6f8e2e81.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
